@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Workout Log</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Workout Log</h1>
+        <p>Track your workouts and stay consistent</p>
+    </header>
+
+    <main>
+
+        <section class="form-container">
+
+            <h2>Add Workout</h2>
+
+            <form id="workoutForm">
+
+                <label for="exercise">Exercise Name</label>
+                <input type="text" id="exercise" placeholder="Eg: Squats">
+
+                <label for="type">Workout Type</label>
+                <select id="type">
+                    <option value="">Select workout type</option>
+                    <option value="Strength">Strength</option>
+                    <option value="Cardio">Cardio</option>
+                    <option value="Flexibility">Flexibility</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <label for="date">Date</label>
+                <input type="date" id="date">
+
+                <label for="duration">Duration (minutes)</label>
+                <input type="number" id="duration" placeholder="Eg: 30">
+
+                <label for="sets">Sets</label>
+                <input type="number" id="sets" placeholder="Eg: 3">
+
+                <label for="reps">Reps</label>
+                <input type="number" id="reps" placeholder="Eg: 12">
+
+                <label for="notes">Notes</label>
+                <textarea id="notes" placeholder="Eg: Felt good today"></textarea>
+
+                <button type="submit">Add Workout</button>
+
+            </form>
+
+        </section>
+
+
+        <section class="workout-container">
+
+            <h2>Workout History</h2>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Exercise</th>
+                        <th>Type</th>
+                        <th>Date</th>
+                        <th>Duration</th>
+                        <th>Sets</th>
+                        <th>Reps</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody id="workoutTable">
+                    <!-- Workouts will appear here -->
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
